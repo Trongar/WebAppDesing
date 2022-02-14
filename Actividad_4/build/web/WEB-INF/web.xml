@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GameJudge</servlet-name>
+        <servlet-class>com.game.controller.GameJudge</servlet-class>
+        <init-param>
+            <param-name>game</param-name>  
+            <param-value>[0, 0]</param-value>  
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameJudge</servlet-name>
+        <url-pattern>/GameJudge.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    <!-- Contex parameters -->
+    <!--
+    <context-param>  
+        <param-name>game</param-name>  
+        <param-value>[0, 0]</param-value>  
+    </context-param>  
+    <context-param>  
+        <param-name>round</param-name>  
+        <param-value>0</param-value>  
+    </context-param>  
+    <context-param>  
+        <param-name>rounds</param-name>  
+        <param-value>[0, 0]</param-value>  
+    </context-param>  
+    <context-param>  
+        <param-name>rdraw</param-name>  
+        <param-value>0</param-value>  
+    </context-param>  
+    <context-param>  
+        <param-name>wins</param-name>  
+        <param-value>[0, 0]</param-value>  
+    </context-param>  
+    <context-param>  
+        <param-name>gdraw</param-name>  
+        <param-value>[0, 0]</param-value>  
+    </context-param>  
+    -->
+</web-app>
