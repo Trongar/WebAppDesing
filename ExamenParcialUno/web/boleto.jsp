@@ -22,7 +22,7 @@
             </div>
             <div id="evento">
                 <% 
-                out.print((String) request.getAttribute("event"));
+                out.print((String) request.getAttribute("evento"));
                 %>
             </div>
 

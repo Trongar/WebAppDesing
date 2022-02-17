@@ -76,8 +76,24 @@ public class TicketMaster extends HttpServlet {
         //get ServletContext object.
         ServletContext context=getServletContext();  
         String event = context.getInitParameter("event");
+        String folio = context.getInitParameter("folio");
+        String type = context.getInitParameter("type");
+        String section = context.getInitParameter("section");
+        String pleace = context.getInitParameter("pleace");
+        String date = context.getInitParameter("date");
+        String address = context.getInitParameter("address");
+        String description = context.getInitParameter("description");
+        String code = context.getInitParameter("code");
         
-        request.setAttribute("event", event);
+        request.setAttribute("evento", event);
+        request.setAttribute("folio", folio);
+        request.setAttribute("tipo", type);
+        request.setAttribute("seccion", section);
+        request.setAttribute("asiento", pleace);
+        request.setAttribute("fecha", date);
+        request.setAttribute("lugar", address);
+        request.setAttribute("descripcion", description);
+        request.setAttribute("codigo", code);
         
         RequestDispatcher view = request.getRequestDispatcher("boleto.jsp");
         view.forward(request, response);

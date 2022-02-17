@@ -42,7 +42,7 @@
         <param-value>DEL 15 DE SEP 2022(10:00PM)\n AL 16 DE SEP 2022(3:00)</param-value>  
     </context-param>
     <context-param>
-        <param-name>adress</param-name>  
+        <param-name>address</param-name>  
         <param-value>BOLETIA</param-value>  
     </context-param>
     <context-param>
@@ -51,6 +51,6 @@
     </context-param>
     <context-param>
         <param-name>code</param-name>  
-        <param-value>12</param-value>  
+        <param-value>72823e46856d61c2</param-value>  
     </context-param>
 </web-app>
