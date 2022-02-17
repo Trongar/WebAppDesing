@@ -39,7 +39,7 @@
     </context-param>
     <context-param>
         <param-name>date</param-name>  
-        <param-value>DEL 15 DE SEP 2022(10:00PM)\n AL 16 DE SEP 2022(3:00)</param-value>  
+        <param-value>DEL 15 DE SEP 2022(10:00PM) AL 16 DE SEP 2022(3:00)</param-value>  
     </context-param>
     <context-param>
         <param-name>address</param-name>  
