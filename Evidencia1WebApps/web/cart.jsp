@@ -1,3 +1,6 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
   <head>
@@ -19,6 +22,14 @@
       <div class="border mockup-window bg-base-300">
         <div class="flex justify-center px-4 py-6 bg-base-200">
           <div class="bg-base-300 rounded-box shadow-xl p-6">
+              <%
+                List articles = (List)session.getAttribute("cart-list");
+                Iterator it = articles.iterator();
+                while (it.hasNext()) {
+                out.print("<br>try: "
+                        + it.next());
+                }
+            %>
             <div class="card card-side bg-base-100 shadow-xl">
                 <figure>
                   <img

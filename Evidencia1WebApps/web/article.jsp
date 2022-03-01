@@ -21,22 +21,22 @@
           <div class="card card-side bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://api.lorem.space/image/book?w=200&h=280"
+                  src="<% out.print(request.getAttribute("image")); %>"
                 alt="Movie"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title text-3xl text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p class="text-md text-secondary">Autor de la obra</p>
+              <h2 class="card-title text-3xl text-primary"><% out.print(request.getAttribute("title")); %></h2>
+              <p class="text-md text-secondary"><% out.print(request.getAttribute("authors")); %></p>
               <div class="justify-end card-actions text-info">
-                <span class="text-sm">Precio:</span><span class="text-2xl">$$$$</span>
+                <span class="text-sm">Precio:</span><span class="text-2xl">$300</span>
               </div>
               <div class="justify-end card-actions">
-                <button class="btn btn-success">Comprar</button>
+                <a class="btn btn-success" href="Add-To-Cart?id=<% out.print(request.getAttribute("id")); %>">Añadir al carrito</a>
               </div>
               <div>
                 <p class="text-accent text-lg">Descripción</p>
-                <p class="text-base-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, temporibus laborum! Tempore, fugit, sed esse aliquid veniam necessitatibus officia cupiditate consectetur maiores non veritatis quod possimus! Deserunt, voluptates. Sunt, provident!</p>
+                <p class="text-base-content"><% out.print(request.getAttribute("description")); %></p>
               </div>
             </div>
           </div>
