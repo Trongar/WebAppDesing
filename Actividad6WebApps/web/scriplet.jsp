@@ -13,9 +13,9 @@
     </head>
     <body>
         <h1>Ejemplo Scriplets</h1>
-        <%! int numero = 7; %>        
-        <%! long store_fact = 1; %>
-        <%! int i =1; %>
+        <%! int numero = 7; 
+        long store_fact = 1; 
+        int i =1; %>
         <% 
         while(i <= numero){
             store_fact = store_fact*i;
